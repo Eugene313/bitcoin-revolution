@@ -37,7 +37,7 @@
   border-bottom: 1px solid #fff;
 }
 .first {
-  background: url("../img/bg1.jpg") no-repeat;
+  background: url("../img/bg.gif") no-repeat;
   background-color: #000;
   background-size: cover;
   background-position: center center;
@@ -53,11 +53,12 @@
   position: relative;
   display: flex;
   align-items: center;
-  width: 1000px;
+  width: 900px;
   height: 100%;
 }
 .first .container .left .laptop {
-  width: 1000px;
+  background-size: cover;
+  width: 900px;
   height: 100%;
   overflow: hidden;
   display: flex;
@@ -115,7 +116,33 @@
   background-position: left;
 }
 .first .container .right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 320px;
+  height: 100%;
+}
+.first .container .right .form-wrap {
+  width: 420px;
+  height: 500px;
+  background: #fff;
+}
+.first .container .right .form-wrap h2 {
+  text-align: center;
+}
+.first .container .right .form-wrap form {
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.first .container .right .form-wrap form .input-wrap {
+  width: 100%;
+}
+.first .container .right .form-wrap form .input-wrap input {
+  width: 100%;
+  margin: 1rem 0;
 }
 .second {
   width: 100%;
