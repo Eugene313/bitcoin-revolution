@@ -5,7 +5,7 @@
     box-sizing: border-box
     font-family: 'Roboto Condensed', sans-serif
 .nav-bar
-    background: #00000050
+    // background: #00000050
     position: fixed
     width: 100%
     padding: 1rem
@@ -21,6 +21,7 @@
             align-items: center
             height 100%
             .menu-link
+                font-size: 1.3rem
                 display: flex
                 align-items: center
                 padding: 1rem
@@ -45,7 +46,7 @@
             position: relative
             display: flex
             align-items: center
-            width: 900px
+            width: 700px
             height: 100%
             .laptop
                 background-size: cover
@@ -65,8 +66,8 @@
                     max-width: 720px
                     text-transform: uppercase
                     text-align: center
-                    font-size: 4.8rem
-                    line-height: 5.2rem
+                    font-size: 3.5rem
+                    line-height: 3.5rem
                     background-image: linear-gradient(to right top, #ff9200, #ffa841, #ffbd6c, #ffd195, #ffe4c0)
                     -webkit-background-clip: text
                     -webkit-text-fill-color: transparent
@@ -74,7 +75,7 @@
                 p   
                     width: 100%
                     text-align: center
-                    font-size: 2rem
+                    font-size: 1.5rem
                     color: #ffffff
                     z-index: 10
                 button
@@ -95,24 +96,44 @@
                         font-size:1.5rem
                         font-weight:400
                         transition: 1s
-                        margin-top: 50px
+                        margin-top: 20px
                         border: none
                         z-index 10
                         &:hover
                             background-position: left
+                .arrow
+                    z-index 10
+                    color: #ffffff
+                    font-size: 2rem
+                    position: relative
+                    top: -58px
+                    left:150px
+                    animation-name: arrow
+                    animation-duration: 1s
+                    animation-iteration-count: infinite
+                    @-webkit-keyframes arrow
+                        0%   {left:150px}
+                        50%   {left:170px}
+                        100% {left: 150px}
         .right
             display: flex
             align-items: center
             justify-content: center;
-            width: 320px
+            width: 380px
             height: 100%
+            margin-left: 1rem
             .form-wrap
-                width: 420px
-                height: 500px
+                width: 380px
+                height: 445px
                 background: #ffffff
                 h2
                     text-align: center
+                    background: orange
+                    padding: 2rem
+                    color: #ffffff
                 form
+                    // background: url(../form.png) center center
+                    background-size: cover
                     width: 100%
                     padding: 1rem
                     display: flex
@@ -122,7 +143,17 @@
                         width: 100%
                         input
                             width: 100%
+                            padding: 0.6rem
                             margin: 1rem 0
+                    button
+                        margin-top:10px
+                        padding: 1rem 4rem
+                        background: orange
+                        border: none
+                        border-radius: 5px
+                        color: #ffffff
+                        text-transform: uppercase
+                        font-size: 1.5rem
 .second
     width: 100%
     height: 100vh
