@@ -6,7 +6,7 @@
   font-family: 'Roboto Condensed', sans-serif;
 }
 .nav-bar {
-  background: #000;
+  background: rgba(0,0,0,0.314);
   position: fixed;
   width: 100%;
   padding: 1rem;
@@ -35,4 +35,89 @@
 }
 .nav-bar .container nav .link-active {
   border-bottom: 1px solid #fff;
+}
+.first {
+  background: url("../img/bg1.jpg") no-repeat;
+  background-color: #000;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100vh;
+}
+.first .container {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.first .container .left {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 1000px;
+  height: 100%;
+}
+.first .container .left .laptop {
+  width: 1000px;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.first .container .left .laptop img {
+  width: 100%;
+  position: absolute;
+}
+.first .container .left .laptop h2 {
+  width: 90%;
+  max-width: 720px;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 4.8rem;
+  line-height: 5.2rem;
+  background-image: linear-gradient(to right top, #ff9200, #ffa841, #ffbd6c, #ffd195, #ffe4c0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  z-index: 10;
+}
+.first .container .left .laptop p {
+  width: 100%;
+  text-align: center;
+  font-size: 2rem;
+  color: #fff;
+  z-index: 10;
+}
+.first .container .left .laptop button {
+  background-image: linear-gradient(to left, #ffa841, #ffa841, #ffa841, #ffa841, #ffa841, #fff, #fff, #ffa841, #ffa841, #ffa841, #ffa841, #ffa841);
+  box-shadow: 0px -3px 40px 1px rgba(0,0,0,0.75);
+  background-size: 1000%;
+  background-position: right;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 50px;
+  margin: 10px 0;
+  cursor: pointer;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 400;
+  transition: 1s;
+  margin-top: 50px;
+  border: none;
+  z-index: 10;
+}
+.first .container .left .laptop button:hover {
+  background-position: left;
+}
+.first .container .right {
+  width: 320px;
+}
+.second {
+  width: 100%;
+  height: 100vh;
 }

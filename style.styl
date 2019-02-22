@@ -5,7 +5,7 @@
     box-sizing: border-box
     font-family: 'Roboto Condensed', sans-serif
 .nav-bar
-    background: black
+    background: #00000050
     position: fixed
     width: 100%
     padding: 1rem
@@ -30,3 +30,77 @@
                 height 100%
             .link-active
                 border-bottom: 1px solid white
+.first
+    background: url(../img/bg1.jpg) no-repeat
+    background-color: #000000
+    background-size: cover
+    background-position: center center
+    width: 100%
+    height 100vh
+    .container
+        display: flex
+        align-items: center
+        height: 100%
+        .left
+            position: relative
+            display: flex
+            align-items: center
+            width: 1000px
+            height: 100%
+            .laptop
+                width: 1000px
+                height 100%
+                overflow: hidden
+                display: flex
+                flex-direction: column
+                justify-content: center
+                align-items: center
+                text-align: center
+                img
+                    width: 100%
+                    position: absolute
+                h2
+                    width: 90%
+                    max-width: 720px
+                    text-transform: uppercase
+                    text-align: center
+                    font-size: 4.8rem
+                    line-height: 5.2rem
+                    background-image: linear-gradient(to right top, #ff9200, #ffa841, #ffbd6c, #ffd195, #ffe4c0)
+                    -webkit-background-clip: text
+                    -webkit-text-fill-color: transparent
+                    z-index: 10
+                p   
+                    width: 100%
+                    text-align: center
+                    font-size: 2rem
+                    color: #ffffff
+                    z-index: 10
+                button
+                        background-image: linear-gradient(to left, #ffa841, #ffa841, #ffa841, #ffa841, #ffa841, #fff, #fff, #ffa841, #ffa841, #ffa841, #ffa841, #ffa841);
+                        box-shadow: 0px -3px 40px 1px rgba(0,0,0,0.75)
+                        background-size:1000%
+                        background-position:right
+                        border-radius:5px
+                        display: flex
+                        justify-content: center
+                        align-items:center
+                        width:250px
+                        height:50px
+                        margin:10px 0
+                        cursor:pointer
+                        color:#fff
+                        text-transform:uppercase
+                        font-size:1.5rem
+                        font-weight:400
+                        transition: 1s
+                        margin-top: 50px
+                        border: none
+                        z-index 10
+                        &:hover
+                            background-position: left
+        .right
+            width: 320px
+.second
+    width: 100%
+    height: 100vh
