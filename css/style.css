@@ -52,6 +52,8 @@
 .first .container .left {
   position: relative;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   width: 700px;
   height: 100%;
@@ -59,7 +61,7 @@
 .first .container .left .laptop {
   background-size: cover;
   width: 900px;
-  height: 100%;
+  height: 500px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -72,7 +74,7 @@
   position: absolute;
 }
 .first .container .left .laptop h2 {
-  width: 90%;
+  width: 70%;
   max-width: 720px;
   text-transform: uppercase;
   text-align: center;
@@ -136,6 +138,20 @@
   100% {
     left: 150px;
   }
+}
+.first .container .left .count {
+  text-align: center;
+}
+.first .container .left .count h2 {
+  color: #ffa500;
+  font-size: 3rem;
+  text-transform: uppercase;
+  line-height: 2rem;
+}
+.first .container .left .count p {
+  color: #fff;
+  font-size: 1.2rem;
+  line-height: 1rem;
 }
 .first .container .right {
   display: flex;
