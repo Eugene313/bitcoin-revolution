@@ -9,6 +9,7 @@
   position: fixed;
   width: 100%;
   padding: 1rem;
+  z-index: 12;
 }
 .nav-bar .container {
   display: flex;
@@ -120,6 +121,9 @@
   animation-duration: 15s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
+}
+.first .container .left .laptop button:hover {
+  background: #012948;
 }
 @-moz-keyframes button2 {
   0% {

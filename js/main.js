@@ -43,5 +43,37 @@ $('.laptop button').click(function(){
         'background':'none',
         'background-color':'#000000'
     })
-})
+});
+
+$(window).on("scroll", function() {
+
+    if ($(window).width() < 800){
+        $('.main').css({
+            'height': '70px',
+            'background': '#333333'
+        });
+        $('.container-menu').css('height', '70px');
+
+    } else {
+
+
+        if (window.pageYOffset > 200) {
+            $('.main').css({
+                'height': '70px',
+                'background': '#333333'
+            });
+            $('.container-menu').css('height', '70px');
+        }
+        if (window.pageYOffset === 0) {
+            $('.main').css({
+                'height': '100px',
+                'background': '#33333370'
+            });
+            $('.container-menu').css({
+                'height': '100px'
+            });
+        }
+    }
+});
+
 

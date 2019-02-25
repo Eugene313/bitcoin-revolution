@@ -9,6 +9,7 @@
     position: fixed
     width: 100%
     padding: 1rem
+    z-index: 12
     .container
         display: flex
         justify-content: space-between
@@ -111,7 +112,9 @@
                         @keyframes button2
                             0%{background-position: right;}
                             95%{background-position: right;}                            
-                            100%{background-position: left;}                       
+                            100%{background-position: left;}
+                        &:hover
+                            background: #012948
                 .arrow
                     z-index 10
                     color: #ffffff
