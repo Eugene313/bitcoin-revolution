@@ -15,10 +15,13 @@ var count= function(){
     mseconds--
     if (mseconds < 0 || mseconds === 0){
         seconds--;
+        if (seconds < 10 ){
+            seconds = '0'+ (seconds);
+        }
         mseconds+=99
-        if(seconds < 0 || seconds === 0 ){
+        if(seconds < 0 || seconds === 0 || seconds === '00'){
             minutes = '0'+ (minutes - 1);
-            seconds+=59;
+            seconds = 59;
         }
     }
     var timer = ' ' + minutes + ' : '+ seconds + ' : ' + mseconds
