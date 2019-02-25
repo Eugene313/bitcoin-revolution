@@ -49,6 +49,7 @@
   display: flex;
   align-items: center;
   height: 100%;
+  overflow: hidden;
 }
 .first .container .left {
   position: relative;
@@ -186,6 +187,11 @@
     left: 150px;
   }
 }
+@media (max-width: 1200px) {
+  .first .container {
+    flex-direction: column;
+  }
+}
 .first .container .right {
   position: relative;
   display: flex;
@@ -314,7 +320,7 @@
   position: absolute;
   bottom: -30px;
   margin-top: 10px;
-  padding: 1rem 4rem;
+  padding: 1rem 2rem;
   background: #ffa500;
   border: none;
   border-radius: 5px;

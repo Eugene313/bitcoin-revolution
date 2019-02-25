@@ -6,7 +6,7 @@ $(window).on('load', function () {
   });
 
 var d = new Date();
-var strDate = d.getFullYear() + "/" + (d.getMonth()+1) + "/" + d.getDate();
+var strDate = '<i class="far fa-calendar-alt"></i>' + ' '+ d.getFullYear() + "/" + (d.getMonth()+1) + "/" + d.getDate();
 $('.count  p .data').append(strDate);
 var minutes = '0'+6;
 var seconds = 30;
@@ -24,7 +24,7 @@ var count= function(){
             seconds = 59;
         }
     }
-    var timer = ' ' + minutes + ' : '+ seconds + ' : ' + mseconds ;
+    var timer = ' ' + '<i class="fas fa-stopwatch"></i>' + ' ' + minutes + ' : '+ seconds + ' : ' + mseconds;
     $('.count  p .counter').html(timer);
 }
 setInterval(count,9);
@@ -35,7 +35,8 @@ $('.laptop button').click(function(){
     });
     setTimeout(function(){
         $('.left').css({
-            'width':'0'
+            'width':'0',
+            'height': '30%'
         });
     },700)
     $('.first').css({
