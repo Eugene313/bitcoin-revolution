@@ -46,34 +46,69 @@ $('.laptop button').click(function(){
 });
 
 $(window).on("scroll", function() {
-
-    if ($(window).width() < 800){
-        $('.main').css({
-            'height': '70px',
-            'background': '#333333'
+    if (window.pageYOffset > 200) {
+        $('.logo img').css({
+            'height': '50px'
         });
-        $('.container-menu').css('height', '70px');
-
-    } else {
-
-
-        if (window.pageYOffset > 200) {
-            $('.main').css({
-                'height': '70px',
-                'background': '#333333'
-            });
-            $('.container-menu').css('height', '70px');
+        $('.nav-bar').css({
+            'background':'#000000',
+            'padding':'5px'
+    });
         }
-        if (window.pageYOffset === 0) {
-            $('.main').css({
-                'height': '100px',
-                'background': '#33333370'
+        if (window.pageYOffset < 200) {
+            $('.logo img').css({
+                'height': '60px',
             });
-            $('.container-menu').css({
-                'height': '100px'
+            $('.nav-bar').css({
+                'background': 'none',
+                'padding':'1rem'
             });
         }
-    }
+    
 });
+
+
+//API random people
+    var peopleRandom = function () {
+    let country3 = 'https://uinames.com/api/?ext';
+    var xhr = new XMLHttpRequest();
+
+    xhr.open('GET', country3, false);
+
+    xhr.send();
+
+    if (xhr.status != 200) {
+        console.log(xhr.status + ': ' + xhr.statusText);
+    } else {
+        var people = JSON.parse(xhr.responseText);
+        
+    }
+    let firstChart = '<img class="people-photo" src="';
+    let secontChart = '" alt="" width="57" height="57">';
+    let peoplePhoto = people.photo;
+    let fullPhoto = firstChart + peoplePhoto + secontChart;
+
+    let firstName = '<span class="people-name">';
+    let secontName = '</span><span class="people-name">just made</span>';
+    let peopleName = people.name;
+    let peopleSurname = people.surname.charAt(0)
+    let fullName = firstName + peopleName + ' ' + peopleSurname + '. ' + secontName;
+
+    let firstProfit = '<span class="people-profit">$';
+    let secontProfit = '</span>';
+    let randomProfit = Math.floor(Math.random() * (100 - 999)) + 999;
+    let fullProfit = firstProfit + randomProfit + secontProfit;
+    let peoples = $('.people');
+    if(peoples.length > 3 ){
+        $(peoples[0]).slideUp(1000)
+        setTimeout(function(){
+            $(peoples[0]).remove()
+        },4000)
+    }
+        $('.people-wrap').append('<div class="people">'+ fullPhoto + fullName  +fullProfit + '</div>');
+    };
+    peopleRandom();
+    setInterval(peopleRandom,5000);
+    
 
 
