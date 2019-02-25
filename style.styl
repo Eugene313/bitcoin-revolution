@@ -48,34 +48,6 @@
         align-items: center
         height: 100%
         overflow hidden
-        .people-wrap
-            position: absolute
-            top: 100px
-            left: 70px
-            right 0
-            width: 100%
-            max-width: 640px
-            max-height: 300px
-            overflow hidden
-            .people
-                border-radius: 30px
-                max-width 320px
-                width: 100%
-                margin: 10px 0
-                display: flex
-                justify-content: space-between
-                align-items: center
-                background: #00000090
-                overflow hidden
-                .people-photo
-                    border-radius: 50%
-                    overflow hidden
-                .people-name
-                    color: white
-                    padding: 0 1rem
-                .people-profit
-                    color: orange
-                    padding: 0 1rem
         .left
             position: relative
             display: flex
@@ -162,6 +134,34 @@
                         100% {left: 150px}
         @media (max-width: 1200px)
             flex-direction: column    
+        .people-wrap
+            position: absolute
+            bottom: 0
+            left: 70px
+            right 0
+            width: 100%
+            max-width: 640px
+            height: 200px
+            overflow hidden
+            .people
+                border-radius: 30px
+                max-width 320px
+                width: 100%
+                margin: 10px 0
+                display: flex
+                justify-content: space-between
+                align-items: center
+                background: #00000090
+                overflow hidden
+                .people-photo
+                    border-radius: 50%
+                    overflow hidden
+                .people-name
+                    color: white
+                    padding: 0 1rem
+                .people-profit
+                    color: orange
+                    padding: 0 1rem
         .right
             position relative
             display: flex
