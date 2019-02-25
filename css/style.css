@@ -9,6 +9,8 @@
   position: fixed;
   width: 100%;
   padding: 1rem;
+  z-index: 12;
+  transition: 1s;
 }
 .nav-bar .container {
   display: flex;
@@ -17,6 +19,7 @@
 }
 .nav-bar .container .logo img {
   height: 60px;
+  transition: 1s;
 }
 .nav-bar .container nav {
   display: flex;
@@ -46,9 +49,44 @@
   transition: 1s all;
 }
 .first .container {
+  position: relative;
   display: flex;
   align-items: center;
   height: 100%;
+  overflow: hidden;
+}
+.first .container .people-wrap {
+  position: absolute;
+  top: 100px;
+  left: 70px;
+  right: 0;
+  width: 100%;
+  max-width: 640px;
+  max-height: 300px;
+  overflow: hidden;
+}
+.first .container .people-wrap .people {
+  border-radius: 30px;
+  max-width: 320px;
+  width: 100%;
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(0,0,0,0.565);
+  overflow: hidden;
+}
+.first .container .people-wrap .people .people-photo {
+  border-radius: 50%;
+  overflow: hidden;
+}
+.first .container .people-wrap .people .people-name {
+  color: #fff;
+  padding: 0 1rem;
+}
+.first .container .people-wrap .people .people-profit {
+  color: #ffa500;
+  padding: 0 1rem;
 }
 .first .container .left {
   position: relative;
@@ -120,6 +158,9 @@
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
+.first .container .left .laptop button:hover {
+  background: #012948;
+}
 @-moz-keyframes button2 {
   0% {
     background-position: right;
@@ -184,6 +225,11 @@
   }
   100% {
     left: 150px;
+  }
+}
+@media (max-width: 1200px) {
+  .first .container {
+    flex-direction: column;
   }
 }
 .first .container .right {
@@ -314,7 +360,7 @@
   position: absolute;
   bottom: -30px;
   margin-top: 10px;
-  padding: 1rem 4rem;
+  padding: 1rem 2rem;
   background: #ffa500;
   border: none;
   border-radius: 5px;
