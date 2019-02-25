@@ -40,18 +40,105 @@
   border-bottom: 1px solid #fff;
 }
 .first {
+  position: relative;
   background: url("../img/bg1.jpg") no-repeat;
   background-color: #000;
   background-size: cover;
   background-position: center center;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   transition: 1s all;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.first .count {
+  background: rgba(1,41,72,0.78);
+  position: fixed;
+  top: 100px;
+  right: 20px;
+  margin: 0 auto;
+  width: 320px;
+  text-align: left;
+  padding: 1rem;
+}
+.first .count h2 {
+  color: #ffa500;
+  font-size: 2rem;
+  text-transform: uppercase;
+  line-height: 2rem;
+}
+.first .count p {
+  color: #fff;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+}
+.first .count p .counter {
+  font-size: 2rem;
+  color: #ffa500;
+  animation-name: counter;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@-moz-keyframes counter {
+  0% {
+    font-size: 1rem;
+    font-weight: 300;
+  }
+  50% {
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+  100% {
+    font-size: 1rem;
+    font-weight: 300;
+  }
+}
+@-webkit-keyframes counter {
+  0% {
+    font-size: 1rem;
+    font-weight: 300;
+  }
+  50% {
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+  100% {
+    font-size: 1rem;
+    font-weight: 300;
+  }
+}
+@-o-keyframes counter {
+  0% {
+    font-size: 1rem;
+    font-weight: 300;
+  }
+  50% {
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+  100% {
+    font-size: 1rem;
+    font-weight: 300;
+  }
+}
+@keyframes counter {
+  0% {
+    font-size: 1rem;
+    font-weight: 300;
+  }
+  50% {
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+  100% {
+    font-size: 1rem;
+    font-weight: 300;
+  }
 }
 .first .container {
   position: relative;
   display: flex;
-  align-items: center;
   height: 100%;
   overflow: hidden;
 }
@@ -59,7 +146,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   width: 700px;
   height: 100%;
@@ -79,6 +166,7 @@
 .first .container .left .laptop img {
   width: 100%;
   position: absolute;
+  top: 0;
 }
 .first .container .left .laptop h2 {
   width: 70%;
@@ -199,129 +287,15 @@
     flex-direction: column;
   }
 }
-.first .container .people-wrap {
-  position: absolute;
-  bottom: 0;
-  left: 70px;
-  right: 0;
-  width: 100%;
-  max-width: 640px;
-  height: 200px;
-  overflow: hidden;
-}
-.first .container .people-wrap .people {
-  border-radius: 30px;
-  max-width: 320px;
-  width: 100%;
-  margin: 10px 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: rgba(0,0,0,0.565);
-  overflow: hidden;
-}
-.first .container .people-wrap .people .people-photo {
-  border-radius: 50%;
-  overflow: hidden;
-}
-.first .container .people-wrap .people .people-name {
-  color: #fff;
-  padding: 0 1rem;
-}
-.first .container .people-wrap .people .people-profit {
-  color: #ffa500;
-  padding: 0 1rem;
-}
 .first .container .right {
   position: relative;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   width: 100%;
   margin-left: 1rem;
   transition: 1s;
-}
-.first .container .right .count {
-  width: 380px;
-  position: absolute;
-  top: -160px;
-  text-align: left;
-  padding: 0.1rem;
-}
-.first .container .right .count h2 {
-  color: #ffa500;
-  font-size: 2rem;
-  text-transform: uppercase;
-  line-height: 2rem;
-}
-.first .container .right .count p {
-  color: #fff;
-  font-size: 1.2rem;
-  line-height: 1.4rem;
-}
-.first .container .right .count p .counter {
-  font-size: 2rem;
-  color: #ffa500;
-  animation-name: counter;
-  animation-duration: 1s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-}
-@-moz-keyframes counter {
-  0% {
-    font-size: 1rem;
-    font-weight: 300;
-  }
-  50% {
-    font-size: 1.2rem;
-    font-weight: 500;
-  }
-  100% {
-    font-size: 1rem;
-    font-weight: 300;
-  }
-}
-@-webkit-keyframes counter {
-  0% {
-    font-size: 1rem;
-    font-weight: 300;
-  }
-  50% {
-    font-size: 1.2rem;
-    font-weight: 500;
-  }
-  100% {
-    font-size: 1rem;
-    font-weight: 300;
-  }
-}
-@-o-keyframes counter {
-  0% {
-    font-size: 1rem;
-    font-weight: 300;
-  }
-  50% {
-    font-size: 1.2rem;
-    font-weight: 500;
-  }
-  100% {
-    font-size: 1rem;
-    font-weight: 300;
-  }
-}
-@keyframes counter {
-  0% {
-    font-size: 1rem;
-    font-weight: 300;
-  }
-  50% {
-    font-size: 1.2rem;
-    font-weight: 500;
-  }
-  100% {
-    font-size: 1rem;
-    font-weight: 300;
-  }
 }
 .first .container .right .form-wrap {
   width: 380px;
@@ -339,7 +313,6 @@
   background: #fff;
   background-size: cover;
   width: 100%;
-  height: 100%;
   padding: 1rem;
   display: flex;
   flex-direction: column;
@@ -368,6 +341,40 @@
   text-transform: uppercase;
   font-size: 1.5rem;
   box-shadow: 0px -2px 16px 1px rgba(0,0,0,0.75);
+}
+.people-wrap {
+  position: absolute;
+  top: 100px;
+  padding-top: 50px;
+  width: 100%;
+  max-width: 4000px;
+  height: 350px;
+  overflow: hidden;
+}
+.people-wrap .people {
+  border-radius: 30px;
+  width: 380px;
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(0,0,0,0.565);
+  overflow: hidden;
+}
+.people-wrap .people .people-photo {
+  border-radius: 50%;
+  overflow: hidden;
+}
+.people-wrap .people .people-name {
+  color: #fff;
+  padding: 0 1rem;
+}
+.people-wrap .people .people-profit {
+  color: #ffa500;
+  padding: 0 1rem;
+}
+.people-wrap .people:last-child {
+  opacity: 0;
 }
 .second {
   width: 100%;

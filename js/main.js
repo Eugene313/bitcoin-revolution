@@ -100,7 +100,10 @@ $(window).on("scroll", function() {
     let fullProfit = firstProfit + randomProfit + secontProfit;
     let peoples = $('.people');
     if(peoples.length > 3 ){
-        $(peoples[0]).slideUp(1000)
+        $(peoples[0]).slideUp(1000);
+        $('.people').last().animate({
+            'opacity':'1'
+        },1000)
         setTimeout(function(){
             $(peoples[0]).remove()
         },3000)
