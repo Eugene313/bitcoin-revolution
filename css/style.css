@@ -14,7 +14,7 @@
 }
 .nav-bar .container {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
 }
 .nav-bar .container .logo img {
@@ -55,11 +55,12 @@
   background: rgba(1,41,72,0.78);
   position: fixed;
   top: 100px;
-  right: 20px;
+  right: 0;
   margin: 0 auto;
   width: 320px;
   text-align: left;
   padding: 1rem;
+  z-index: 13;
 }
 .first .count h2 {
   color: #ffa500;
@@ -341,6 +342,33 @@
   text-transform: uppercase;
   font-size: 1.5rem;
   box-shadow: 0px -2px 16px 1px rgba(0,0,0,0.75);
+}
+.first .secure-wrap {
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem 0;
+}
+.first .secure-wrap .secure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 1rem;
+}
+.first .secure-wrap .secure .block {
+  margin: 1rem;
+}
+.first .secure-wrap .secure .block img {
+  height: 40px;
+}
+.first .secure-wrap .bidask {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.first .secure-wrap .bidask span {
+  padding: 0 1rem;
+  color: #ffa500;
+  font-size: 1.5rem;
 }
 .people-wrap {
   position: absolute;
