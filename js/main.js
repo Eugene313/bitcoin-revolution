@@ -46,7 +46,7 @@ $('.laptop button').click(function(){
 });
 
 $(window).on("scroll", function() {
-    if (window.pageYOffset > 200) {
+    if (window.pageYOffset > 0) {
         $('.logo img').css({
             'height': '50px'
         });
@@ -55,7 +55,7 @@ $(window).on("scroll", function() {
             'padding':'5px'
     });
         }
-        if (window.pageYOffset < 200) {
+        if (window.pageYOffset === 0) {
             $('.logo img').css({
                 'height': '60px',
             });
@@ -113,5 +113,7 @@ $(window).on("scroll", function() {
     peopleRandom();
     setInterval(peopleRandom,5000);
     
-
-
+    var image = document.getElementsByClassName('thumbnail');
+    new simpleParallax(image, {
+      scale: 1.5
+    });
