@@ -139,27 +139,31 @@
     left: 150px;
   }
 }
-.first .container .left .count {
-  text-align: center;
-}
-.first .container .left .count h2 {
-  color: #ffa500;
-  font-size: 3rem;
-  text-transform: uppercase;
-  line-height: 2rem;
-}
-.first .container .left .count p {
-  color: #fff;
-  font-size: 1.2rem;
-  line-height: 1rem;
-}
 .first .container .right {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 380px;
-  height: 100%;
   margin-left: 1rem;
+}
+.first .container .right .count {
+  position: absolute;
+  top: -170px;
+  text-align: left;
+  background: rgba(0,0,0,0.129);
+  padding: 1rem;
+}
+.first .container .right .count h2 {
+  color: #ffa500;
+  font-size: 2rem;
+  text-transform: uppercase;
+  line-height: 2rem;
+}
+.first .container .right .count p {
+  color: #fff;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
 }
 .first .container .right .form-wrap {
   width: 380px;

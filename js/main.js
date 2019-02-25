@@ -8,4 +8,21 @@ $(window).on('load', function () {
 var d = new Date();
 var strDate = d.getFullYear() + "/" + (d.getMonth()+1) + "/" + d.getDate();
 $('.count  p .data').append(strDate);
-$('.count  p .counter').append('-06:09:10');
+var minutes = '0'+6;
+var seconds = 30;
+var mseconds = 99;
+var count= function(){
+    mseconds--
+    if (mseconds < 0 || mseconds === 0){
+        seconds--;
+        mseconds+=99
+        if(seconds < 0 || seconds === 0 ){
+            minutes = '0'+ (minutes - 1);
+            seconds+=59;
+        }
+    }
+    var timer = ' ' + minutes + ' : '+ seconds + ' : ' + mseconds
+    $('.count  p .counter').html(timer);
+}
+setInterval(count,10)
+
