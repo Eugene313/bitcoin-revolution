@@ -37,7 +37,7 @@
   border-bottom: 1px solid #fff;
 }
 .first {
-  background: url("../img/bg.gif") no-repeat;
+  background: url("../img/bg1.jpg") no-repeat;
   background-color: #000;
   background-size: cover;
   background-position: center center;
@@ -52,6 +52,8 @@
 .first .container .left {
   position: relative;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   width: 700px;
   height: 100%;
@@ -59,7 +61,7 @@
 .first .container .left .laptop {
   background-size: cover;
   width: 900px;
-  height: 100%;
+  height: 500px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -72,7 +74,7 @@
   position: absolute;
 }
 .first .container .left .laptop h2 {
-  width: 90%;
+  width: 70%;
   max-width: 720px;
   text-transform: uppercase;
   text-align: center;
@@ -138,12 +140,94 @@
   }
 }
 .first .container .right {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 380px;
-  height: 100%;
   margin-left: 1rem;
+}
+.first .container .right .count {
+  position: absolute;
+  top: -160px;
+  text-align: left;
+  background: rgba(0,0,0,0.129);
+  padding: 0.1rem;
+}
+.first .container .right .count h2 {
+  color: #ffa500;
+  font-size: 2rem;
+  text-transform: uppercase;
+  line-height: 2rem;
+}
+.first .container .right .count p {
+  color: #fff;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+}
+.first .container .right .count p .counter {
+  font-size: 2rem;
+  color: #ffa500;
+  animation-name: counter;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@-moz-keyframes counter {
+  0% {
+    font-size: 1rem;
+    font-weight: 300;
+  }
+  50% {
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+  100% {
+    font-size: 1rem;
+    font-weight: 300;
+  }
+}
+@-webkit-keyframes counter {
+  0% {
+    font-size: 1rem;
+    font-weight: 300;
+  }
+  50% {
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+  100% {
+    font-size: 1rem;
+    font-weight: 300;
+  }
+}
+@-o-keyframes counter {
+  0% {
+    font-size: 1rem;
+    font-weight: 300;
+  }
+  50% {
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+  100% {
+    font-size: 1rem;
+    font-weight: 300;
+  }
+}
+@keyframes counter {
+  0% {
+    font-size: 1rem;
+    font-weight: 300;
+  }
+  50% {
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+  100% {
+    font-size: 1rem;
+    font-weight: 300;
+  }
 }
 .first .container .right .form-wrap {
   width: 380px;
@@ -181,6 +265,7 @@
   color: #fff;
   text-transform: uppercase;
   font-size: 1.5rem;
+  box-shadow: 0px -2px 16px 1px rgba(0,0,0,0.75);
 }
 .second {
   width: 100%;
