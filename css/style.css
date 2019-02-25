@@ -45,8 +45,9 @@
   background-size: cover;
   background-position: center center;
   width: 100%;
-  height: 100vh;
+  height: 1200px;
   transition: 1s all;
+  padding-top: 100px;
 }
 .first .container {
   position: relative;
@@ -59,7 +60,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   width: 700px;
   height: 100%;
@@ -79,6 +80,7 @@
 .first .container .left .laptop img {
   width: 100%;
   position: absolute;
+  top: 0;
 }
 .first .container .left .laptop h2 {
   width: 70%;
@@ -198,39 +200,6 @@
   .first .container {
     flex-direction: column;
   }
-}
-.first .container .people-wrap {
-  position: absolute;
-  bottom: 0;
-  left: 70px;
-  right: 0;
-  width: 100%;
-  max-width: 640px;
-  height: 200px;
-  overflow: hidden;
-}
-.first .container .people-wrap .people {
-  border-radius: 30px;
-  max-width: 320px;
-  width: 100%;
-  margin: 10px 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: rgba(0,0,0,0.565);
-  overflow: hidden;
-}
-.first .container .people-wrap .people .people-photo {
-  border-radius: 50%;
-  overflow: hidden;
-}
-.first .container .people-wrap .people .people-name {
-  color: #fff;
-  padding: 0 1rem;
-}
-.first .container .people-wrap .people .people-profit {
-  color: #ffa500;
-  padding: 0 1rem;
 }
 .first .container .right {
   position: relative;
@@ -368,6 +337,38 @@
   text-transform: uppercase;
   font-size: 1.5rem;
   box-shadow: 0px -2px 16px 1px rgba(0,0,0,0.75);
+}
+.people-wrap {
+  padding-top: 50px;
+  width: 100%;
+  max-width: 4000px;
+  height: 350px;
+  overflow: hidden;
+}
+.people-wrap .people {
+  border-radius: 30px;
+  width: 380px;
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(0,0,0,0.565);
+  overflow: hidden;
+}
+.people-wrap .people .people-photo {
+  border-radius: 50%;
+  overflow: hidden;
+}
+.people-wrap .people .people-name {
+  color: #fff;
+  padding: 0 1rem;
+}
+.people-wrap .people .people-profit {
+  color: #ffa500;
+  padding: 0 1rem;
+}
+.people-wrap .people:last-child {
+  opacity: 0;
 }
 .second {
   width: 100%;
