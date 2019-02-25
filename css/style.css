@@ -43,6 +43,7 @@
   background-position: center center;
   width: 100%;
   height: 100vh;
+  transition: 1s all;
 }
 .first .container {
   display: flex;
@@ -57,6 +58,7 @@
   align-items: center;
   width: 700px;
   height: 100%;
+  transition: 1s;
 }
 .first .container .left .laptop {
   background-size: cover;
@@ -113,9 +115,54 @@
   margin-top: 20px;
   border: none;
   z-index: 10;
+  animation-name: button2;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
-.first .container .left .laptop button:hover {
-  background-position: left;
+@-moz-keyframes button2 {
+  0% {
+    background-position: right;
+  }
+  95% {
+    background-position: right;
+  }
+  100% {
+    background-position: left;
+  }
+}
+@-webkit-keyframes button2 {
+  0% {
+    background-position: right;
+  }
+  95% {
+    background-position: right;
+  }
+  100% {
+    background-position: left;
+  }
+}
+@-o-keyframes button2 {
+  0% {
+    background-position: right;
+  }
+  95% {
+    background-position: right;
+  }
+  100% {
+    background-position: left;
+  }
+}
+@keyframes button2 {
+  0% {
+    background-position: right;
+  }
+  95% {
+    background-position: right;
+  }
+  100% {
+    background-position: left;
+  }
 }
 .first .container .left .laptop .arrow {
   z-index: 10;
@@ -144,14 +191,15 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 380px;
+  width: 100%;
   margin-left: 1rem;
+  transition: 1s;
 }
 .first .container .right .count {
+  width: 380px;
   position: absolute;
   top: -160px;
   text-align: left;
-  background: rgba(0,0,0,0.129);
   padding: 0.1rem;
 }
 .first .container .right .count h2 {
@@ -231,22 +279,26 @@
 }
 .first .container .right .form-wrap {
   width: 380px;
-  height: 445px;
-  background: #fff;
+  height: 100%;
 }
 .first .container .right .form-wrap h2 {
   text-align: center;
-  background: #ffa500;
+  background: rgba(1,41,72,0.78);
   padding: 2rem;
   color: #fff;
+  margin: 0;
 }
 .first .container .right .form-wrap form {
+  position: relative;
+  background: #fff;
   background-size: cover;
   width: 100%;
+  height: 100%;
   padding: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 50px;
 }
 .first .container .right .form-wrap form .input-wrap {
   width: 100%;
@@ -255,8 +307,12 @@
   width: 100%;
   padding: 0.6rem;
   margin: 1rem 0;
+  background: none;
+  border: 1px solid #dcdcdc;
 }
 .first .container .right .form-wrap form button {
+  position: absolute;
+  bottom: -30px;
   margin-top: 10px;
   padding: 1rem 4rem;
   background: #ffa500;

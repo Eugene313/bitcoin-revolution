@@ -29,3 +29,18 @@ var count= function(){
 }
 setInterval(count,9);
 
+$('.laptop button').click(function(){
+    $('.left').css({
+        'opacity':'0'
+    });
+    setTimeout(function(){
+        $('.left').css({
+            'width':'0'
+        });
+    },700)
+    $('.first').css({
+        'background':'none',
+        'background-color':'#000000'
+    })
+})
+
