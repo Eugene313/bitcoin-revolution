@@ -38,6 +38,7 @@
     background-position: center center
     width: 100%
     height 100vh
+    transition: 1s all
     .container
         display: flex
         align-items: center
@@ -50,6 +51,7 @@
             align-items: center
             width: 700px
             height: 100%
+            transition: 1s
             .laptop
                 background-size: cover
                 width: 900px
@@ -101,8 +103,15 @@
                         margin-top: 20px
                         border: none
                         z-index 10
-                        &:hover
-                            background-position: left
+                        animation-name: button2
+                        animation-duration: 15s
+                        animation-iteration-count: infinite
+                        animation-timing-function: linear
+                        @keyframes button2
+                            0%{background-position: right;}
+                            95%{background-position: right;}                            
+                            100%{background-position: left;}
+                            
                 .arrow
                     z-index 10
                     color: #ffffff
@@ -122,14 +131,14 @@
             display: flex
             align-items: center
             justify-content: center;
-            width: 380px
-            // height: 100%
+            width: 100%
             margin-left: 1rem
+            transition: 1s
             .count
+                width: 380px
                 position: absolute
                 top: -160px
                 text-align: left
-                background: #00000021
                 padding: 0.1rem;
                 h2
                  color: orange
@@ -153,28 +162,36 @@
                          100% {font-size: 1rem;font-weight: 300;}
             .form-wrap
                 width: 380px
-                height: 445px
-                background: #ffffff
+                height: 100%
                 h2
                     text-align: center
-                    background: orange
+                    background: #012948c7
                     padding: 2rem
                     color: #ffffff
+                    margin: 0
                 form
                     // background: url(../form.png) center center
+                    position relative
+                    background: #ffffff
                     background-size: cover
                     width: 100%
+                    height 100%
                     padding: 1rem
                     display: flex
                     flex-direction: column
                     align-items: center
+                    padding-bottom: 50px
                     .input-wrap
                         width: 100%
                         input
                             width: 100%
                             padding: 0.6rem
                             margin: 1rem 0
+                            background: none
+                            border: 1px solid #dcdcdc
                     button
+                        position: absolute
+                        bottom: -30px
                         margin-top:10px
                         padding: 1rem 4rem
                         background: orange
