@@ -113,5 +113,7 @@ $(window).on("scroll", function() {
     peopleRandom();
     setInterval(peopleRandom,5000);
     
-
-
+    var image = document.getElementsByClassName('thumbnail');
+    new simpleParallax(image, {
+      scale: 1.5
+    });
