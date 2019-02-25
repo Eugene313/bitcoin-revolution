@@ -24,8 +24,8 @@ var count= function(){
             seconds = 59;
         }
     }
-    var timer = ' ' + minutes + ' : '+ seconds + ' : ' + mseconds
+    var timer = ' ' + minutes + ' : '+ seconds + ' : ' + mseconds ;
     $('.count  p .counter').html(timer);
 }
-setInterval(count,10)
+setInterval(count,9);
 
