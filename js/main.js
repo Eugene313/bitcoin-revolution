@@ -46,7 +46,7 @@ $('.laptop button').click(function(){
 });
 
 $(window).on("scroll", function() {
-    if (window.pageYOffset > 200) {
+    if (window.pageYOffset > 0) {
         $('.logo img').css({
             'height': '50px'
         });
@@ -55,7 +55,7 @@ $(window).on("scroll", function() {
             'padding':'5px'
     });
         }
-        if (window.pageYOffset < 200) {
+        if (window.pageYOffset === 0) {
             $('.logo img').css({
                 'height': '60px',
             });
