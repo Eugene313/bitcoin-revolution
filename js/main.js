@@ -103,7 +103,7 @@ $(window).on("scroll", function() {
         $(peoples[0]).slideUp(1000)
         setTimeout(function(){
             $(peoples[0]).remove()
-        },4000)
+        },3000)
     }
         $('.people-wrap').append('<div class="people">'+ fullPhoto + fullName  +fullProfit + '</div>');
     };

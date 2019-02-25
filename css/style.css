@@ -55,39 +55,6 @@
   height: 100%;
   overflow: hidden;
 }
-.first .container .people-wrap {
-  position: absolute;
-  top: 100px;
-  left: 70px;
-  right: 0;
-  width: 100%;
-  max-width: 640px;
-  max-height: 300px;
-  overflow: hidden;
-}
-.first .container .people-wrap .people {
-  border-radius: 30px;
-  max-width: 320px;
-  width: 100%;
-  margin: 10px 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: rgba(0,0,0,0.565);
-  overflow: hidden;
-}
-.first .container .people-wrap .people .people-photo {
-  border-radius: 50%;
-  overflow: hidden;
-}
-.first .container .people-wrap .people .people-name {
-  color: #fff;
-  padding: 0 1rem;
-}
-.first .container .people-wrap .people .people-profit {
-  color: #ffa500;
-  padding: 0 1rem;
-}
 .first .container .left {
   position: relative;
   display: flex;
@@ -231,6 +198,39 @@
   .first .container {
     flex-direction: column;
   }
+}
+.first .container .people-wrap {
+  position: absolute;
+  bottom: 0;
+  left: 70px;
+  right: 0;
+  width: 100%;
+  max-width: 640px;
+  height: 200px;
+  overflow: hidden;
+}
+.first .container .people-wrap .people {
+  border-radius: 30px;
+  max-width: 320px;
+  width: 100%;
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(0,0,0,0.565);
+  overflow: hidden;
+}
+.first .container .people-wrap .people .people-photo {
+  border-radius: 50%;
+  overflow: hidden;
+}
+.first .container .people-wrap .people .people-name {
+  color: #fff;
+  padding: 0 1rem;
+}
+.first .container .people-wrap .people .people-profit {
+  color: #ffa500;
+  padding: 0 1rem;
 }
 .first .container .right {
   position: relative;
