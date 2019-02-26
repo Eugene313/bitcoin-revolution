@@ -106,7 +106,7 @@ $(window).on("scroll", function() {
         },1000)
         setTimeout(function(){
             $(peoples[0]).remove()
-        },3000)
+        },2000)
     }
         $('.people-wrap').append('<div class="people">'+ fullPhoto + fullName  +fullProfit + '</div>');
     };
